@@ -7,6 +7,8 @@
     <link rel="canonical" href="http://theillusionoflife.github.io/index.html" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async custom-element="amp-analytics"
+    src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <style>body {opacity: 0}</style><noscript><style>body {opacity: 1}</style></noscript>
@@ -500,6 +502,21 @@ th {
 </style>
   </head>
   <body>
+    <amp-analytics type="googleanalytics" id="analytics1">
+    <script type="application/json">
+    {
+      "vars": {
+        "account": "UA-72170685-2"
+      },
+      "triggers": {
+        "trackPageview": {
+          "on": "visible",
+          "request": "pageview"
+        }
+      }
+    }
+    </script>
+    </amp-analytics>
     <section class="page-header">
       <h1 class="project-name">Mukai Entertainment</h1>
       <h2 class="project-tagline">The official website</h2>
@@ -531,13 +548,15 @@ th {
      <footer class="site-footer">
         <span class="site-footer-credits">
         	Contact:<br />
-        	geekplusalpha@gmail.com<br />
-			*English, Japanese, French are available.
+        	<a href=“mailto:geekplusalpha@gmail.com” target=“_blank”>geekplusalpha@gmail.com</a><br />
+			*English, Japanese and French are available.<br />
 	     </span>
+	     <span class=“site-footer-privacy”>
+	        <br />
+            <a href=“https://www.google.com/policies/privacy/partners/“ target=“_blank”>Google privacy and terms</a>
+	    </span>
       </footer>
 
     </section>
-
-  
   </body>
 </html>
